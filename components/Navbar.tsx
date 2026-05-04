@@ -39,10 +39,10 @@ export default function Navbar() {
             </Link>
           </div>
           
-          <div className="hidden md:ml-6 md:flex md:items-center md:space-x-8">
-            <Link href="/" className="text-gray-800 hover:text-[#D4AF37] px-3 py-2 text-sm font-medium transition-colors">Accueil</Link>
-            <Link href="/boutique" className="text-gray-800 hover:text-[#D4AF37] px-3 py-2 text-sm font-medium transition-colors">Boutique</Link>
-            <Link href="/contact" className="text-gray-800 hover:text-[#D4AF37] px-3 py-2 text-sm font-medium transition-colors">Contact</Link>
+          <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
+            <Link href="/" className="text-gray-800 hover:text-[#D4AF37] hover:border-[#D4AF37] px-5 py-2 text-base font-semibold border-2 border-gray-200 rounded-full transition-all">Accueil</Link>
+            <Link href="/boutique" className="text-gray-800 hover:text-[#D4AF37] hover:border-[#D4AF37] px-5 py-2 text-base font-semibold border-2 border-gray-200 rounded-full transition-all">Boutique</Link>
+            <Link href="/contact" className="text-gray-800 hover:text-[#D4AF37] hover:border-[#D4AF37] px-5 py-2 text-base font-semibold border-2 border-gray-200 rounded-full transition-all">Contact</Link>
           </div>
           
           <div className="flex items-center md:hidden">
@@ -59,10 +59,10 @@ export default function Navbar() {
       {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden border-t border-gray-200 bg-[#FAF9F6]">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link href="/" className="block px-3 py-2 text-base font-medium text-gray-800 hover:text-[#D4AF37] hover:bg-gray-50">Accueil</Link>
-            <Link href="/boutique" className="block px-3 py-2 text-base font-medium text-gray-800 hover:text-[#D4AF37] hover:bg-gray-50">Boutique</Link>
-            <Link href="/contact" className="block px-3 py-2 text-base font-medium text-gray-800 hover:text-[#D4AF37] hover:bg-gray-50">Contact</Link>
+          <div className="px-4 pt-4 pb-6 space-y-3 sm:px-3">
+            <Link href="/" className="block px-4 py-3 text-lg font-semibold text-center text-gray-800 hover:text-[#D4AF37] border-2 border-gray-200 hover:border-[#D4AF37] rounded-full transition-all">Accueil</Link>
+            <Link href="/boutique" className="block px-4 py-3 text-lg font-semibold text-center text-gray-800 hover:text-[#D4AF37] border-2 border-gray-200 hover:border-[#D4AF37] rounded-full transition-all">Boutique</Link>
+            <Link href="/contact" className="block px-4 py-3 text-lg font-semibold text-center text-gray-800 hover:text-[#D4AF37] border-2 border-gray-200 hover:border-[#D4AF37] rounded-full transition-all">Contact</Link>
           </div>
         </div>
       )}
