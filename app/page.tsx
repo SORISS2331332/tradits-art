@@ -13,11 +13,11 @@ export default function Home() {
       
       {/* Introduction */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
-        <h2 className="font-serif text-3xl md:text-5xl text-[#800020] font-bold mb-6">Tradis Art</h2>
+        <h2 className="font-serif text-3xl md:text-5xl text-[#800020] font-bold mb-6">Tradi's Art</h2>
         <div className="w-24 h-1 bg-[#D4AF37] mx-auto mb-8"></div>
         <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
           Nous confectionnons et vendons des bijoux artisanaux uniques, faits à la main avec des perles traditionnelles. 
-          Que ce soit pour un mariage, une cérémonie culturelle ou un événement de fashion, Tradis Art sublime votre 
+          Que ce soit pour un mariage, une cérémonie culturelle ou un événement de fashion, Tradi's Art sublime votre 
           allure avec l'authenticité de notre art.
         </p>
       </section>

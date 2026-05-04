@@ -67,7 +67,7 @@ export default function Hero() {
             >
               <img 
                 src="/images/logo.jpeg" 
-                alt="Tradis Art Logo" 
+                alt="Tradi's Art Logo" 
                 className="w-full h-full object-cover"
               />
             </motion.div>

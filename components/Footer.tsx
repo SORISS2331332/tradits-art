@@ -15,6 +15,14 @@ const FacebookIcon = ({ size }: { size: number }) => (
   </svg>
 )
 
+const LinkedinIcon = ({ size }: { size: number }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+  </svg>
+)
+
 export default function Footer() {
   return (
     <footer className="bg-[#1A1A1A] text-gray-300">
@@ -23,9 +31,9 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#D4AF37] relative bg-white flex-shrink-0">
-                <img src="/images/logo.jpeg" alt="Tradis Art Logo" className="w-full h-full object-cover" />
+                <img src="/images/logo.jpeg" alt="Tradi's Art Logo" className="w-full h-full object-cover" />
               </div>
-              <h3 className="font-serif text-2xl text-[#D4AF37] font-bold">Tradis Art</h3>
+              <h3 className="font-serif text-2xl text-[#D4AF37] font-bold">Tradi's Art</h3>
             </div>
             <p className="text-sm leading-relaxed mb-6">
               Nous confectionnons et vendons des bijoux artisanaux faits avec des perles traditionnelles. 
@@ -34,16 +42,17 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a href="https://www.instagram.com/tradisart.7154?igsh=OG5vdjBycjVhb3Rr&utm_source=qr" className="text-gray-400 hover:text-[#D4AF37] transition-colors"><InstagramIcon size={20} /></a>
               <a href="https://www.facebook.com/share/1GvtNPNQzt/?mibextid=wwXIfr" className="text-gray-400 hover:text-[#D4AF37] transition-colors"><FacebookIcon size={20} /></a>
-              <a href="https://www.tiktok.com/@tradis.art?_r=1&_t=ZS-95rNa102LxP" className="text-gray-400 hover:text-[#D4AF37] transition-colors">
+              <a href="https://www.tiktok.com/@tradis.art?_r=1&_t=ZS-95rNa102LxP" className="text-gray-400 hover:text-[#D4AF37] transition-colors" target="_blank" rel="noopener noreferrer">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
                 </svg>
               </a>
+              <a href="https://www.linkedin.com/in/tradi’s-art-70006b408" className="text-gray-400 hover:text-[#D4AF37] transition-colors" target="_blank" rel="noopener noreferrer"><LinkedinIcon size={20} /></a>
             </div>
           </div>
           
           <div>
-            <h4 className="text-white font-medium mb-4 uppercase tracking-wider text-sm">Liens Rapides</h4>
+            <h4 className="text-white font-medium mb-4 uppercase tracking-wider text-sm">Liens Utiles</h4>
             <ul className="space-y-2 text-sm">
               <li><Link href="/" className="hover:text-[#D4AF37] transition-colors">Accueil</Link></li>
               <li><Link href="/boutique" className="hover:text-[#D4AF37] transition-colors">Nos Collections</Link></li>
@@ -57,11 +66,11 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-[#D4AF37] mt-0.5 flex-shrink-0" />
-                <span>Casablanca, Maroc (Livraison internationale)</span>
+                <span>Agadir, Maroc (Livraison internationale)</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-[#D4AF37] flex-shrink-0" />
-                <span>+212 600 000 000</span>
+                <span>+212 770 34 84 73</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-[#D4AF37] flex-shrink-0" />
@@ -82,7 +91,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-10 pt-6 text-center text-xs text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Tradis Art. Tous droits réservés. L'élégance de nos traditions.</p>
+          <p>&copy; {new Date().getFullYear()} Tradi's Art. Tous droits réservés. L'élégance de nos traditions.</p>
         </div>
       </div>
     </footer>
