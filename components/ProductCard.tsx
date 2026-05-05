@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import Link from 'next/link'
+
 
 interface ProductProps {
   id: number
@@ -10,7 +10,7 @@ interface ProductProps {
   category: string
 }
 
-export default function ProductCard({ id, name, price, image, category }: ProductProps) {
+export default function ProductCard({ name, price, image, category }: ProductProps) {
   return (
     <div className="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full">
       <div className="relative aspect-square overflow-hidden bg-gray-100 flex items-center justify-center">
@@ -18,10 +18,11 @@ export default function ProductCard({ id, name, price, image, category }: Produc
         <div className="absolute inset-0 flex items-center justify-center text-gray-400 font-medium text-sm">
           Images: {image.split('/').pop()}
         </div>
-        <img 
+        <Image 
           src={image} 
           alt={name}
-          className="w-full h-full object-cover relative z-10 group-hover:scale-105 transition-transform duration-500"
+          fill
+          className="object-cover relative z-10 group-hover:scale-105 transition-transform duration-500"
           onError={(e) => {
             // Hide broken image so placeholder shows
             (e.target as HTMLImageElement).style.opacity = '0';

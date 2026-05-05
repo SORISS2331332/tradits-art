@@ -1,6 +1,7 @@
 "use client"
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { ChevronRight, ChevronLeft } from 'lucide-react'
 
@@ -40,10 +41,11 @@ export default function Hero() {
         >
           {slide.src ? (
             <>
-              <img 
+              <Image 
                 src={slide.src} 
                 alt="Hero background" 
-                className="absolute inset-0 w-full h-full object-contain"
+                fill
+                className="object-contain"
                 onError={(e) => { (e.target as HTMLImageElement).style.opacity = '0'; }}
               />
               {slide.showText && <div className="absolute inset-0 bg-black/50" />}
@@ -65,10 +67,11 @@ export default function Hero() {
               transition={{ duration: 0.8 }}
               className="mb-8 rounded-full overflow-hidden border-4 border-[#D4AF37] shadow-[0_0_20px_rgba(212,175,55,0.4)] w-32 h-32 md:w-40 md:h-40 relative bg-white"
             >
-              <img 
+              <Image 
                 src="/images/logo.jpeg" 
                 alt="Tradi's Art Logo" 
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </motion.div>
 
@@ -78,7 +81,7 @@ export default function Hero() {
               transition={{ duration: 0.8 }}
               className="text-4xl md:text-6xl font-serif font-bold text-white mb-6"
             >
-              L'Élégance des <span className="text-[#D4AF37]">Perles Traditionnelles</span>
+              L’Élégance des <span className="text-[#D4AF37]">Perles Traditionnelles</span>
             </motion.h1>
             
             <motion.p 
@@ -87,7 +90,7 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl"
             >
-              Des bijoux artisanaux d'exception pour vos mariages, cérémonies culturelles et événements fashion.
+              Des bijoux artisanaux d’exception pour vos mariages, cérémonies culturelles et événements fashion.
             </motion.p>
           </>
         )}

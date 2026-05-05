@@ -1,5 +1,5 @@
-import Link from 'next/link'
-import { MapPin, Phone, Mail, CreditCard } from 'lucide-react'
+
+import Image from 'next/image'
 
 const InstagramIcon = ({ size }: { size: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -31,12 +31,12 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-start">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#D4AF37] relative bg-white flex-shrink-0">
-                <img src="/images/logo.jpeg" alt="Tradi's Art Logo" className="w-full h-full object-cover" />
+                <Image src="/images/logo.jpeg" alt="Tradi’s Art Logo" fill className="object-cover" />
               </div>
-              <h3 className="font-serif text-2xl text-[#D4AF37] font-bold">Tradi's Art</h3>
+              <h3 className="font-serif text-2xl text-[#D4AF37] font-bold">Tradi’s Art</h3>
             </div>
             <p className="text-sm leading-relaxed max-w-sm">
-              L'élégance des perles traditionnelles. Bijoux artisanaux faits main pour toutes vos occasions spéciales.
+              L’élégance des perles traditionnelles. Bijoux artisanaux faits main pour toutes vos occasions spéciales.
             </p>
           </div>
           
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-10 pt-6 text-center text-xs text-gray-500">
-          <p>&copy; {new Date().getFullYear()} Tradi's Art. Tous droits réservés. L'élégance de nos traditions.</p>
+          <p>&copy; {new Date().getFullYear()} Tradi’s Art. Tous droits réservés. L’élégance de nos traditions.</p>
         </div>
       </div>
     </footer>

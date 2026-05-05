@@ -4,7 +4,7 @@ export const products = [
     name: "Couronne Royale d'Or",
     category: "Couronnes Royales",
     price: 1500,
-    image: "/images/product-couronne-1.jpg",
+    image: "/images/product-couronne-1.jpeg",
     description: "Une magnifique couronne royale confectionnée à la main avec des perles traditionnelles dorées et des cristaux, parfaite pour les mariages."
   },
   {
@@ -12,7 +12,7 @@ export const products = [
     name: "Parure Collier Émeraude",
     category: "Colliers",
     price: 850,
-    image: "/images/product-collier-1.jpg",
+    image: "/images/product-collier-1.jpeg",
     description: "Collier majestueux en perles traditionnelles vertes émeraude, idéal pour les cérémonies culturelles."
   },
   {
@@ -20,7 +20,7 @@ export const products = [
     name: "Chaîne de Cheville Perle d'Eau",
     category: "Chaînes de Chevilles",
     price: 300,
-    image: "/images/product-cheville-1.jpg",
+    image: "/images/product-cheville-1.jpeg",
     description: "Délicate chaîne de cheville artisanale, un accessoire subtil et élégant."
   },
   {
@@ -28,7 +28,7 @@ export const products = [
     name: "Ceinture de Hanches Rubis",
     category: "Chaînes de Hanches",
     price: 450,
-    image: "/images/product-hanche-1.jpg",
+    image: "/images/product-hanche-1.jpeg",
     description: "Chaîne de hanches colorée en perles rouges, met en valeur la silhouette pour les événements de fashion."
   },
   {
@@ -36,7 +36,7 @@ export const products = [
     name: "Bague Impériale",
     category: "Bagues",
     price: 150,
-    image: "/images/product-bague-1.jpg",
+    image: "/images/product-bague-1.jpeg",
     description: "Bague audacieuse tissée de perles traditionnelles avec un motif central."
   },
   {
@@ -44,7 +44,7 @@ export const products = [
     name: "Couronne Nuptiale Nacrée",
     category: "Couronnes Royales",
     price: 1300,
-    image: "/images/product-couronne-2.jpg",
+    image: "/images/product-couronne-2.jpeg",
     description: "Sublime couronne en perles nacrées pour la mariée traditionnelle."
   },
   {
@@ -52,7 +52,7 @@ export const products = [
     name: "Collier Soleil d'Afrique",
     category: "Colliers",
     price: 700,
-    image: "/images/product-collier-2.jpg",
+    image: "/images/product-collier-2.jpeg",
     description: "Collier éclatant aux tons chauds, un incontournable de l'artisanat."
   },
   {
@@ -60,7 +60,7 @@ export const products = [
     name: "Ceinture de Hanches Dorée",
     category: "Chaînes de Hanches",
     price: 500,
-    image: "/images/product-hanche-2.jpg",
+    image: "/images/product-hanche-2.jpeg",
     description: "Des perles dorées finement tissées pour habiller vos hanches de lumière."
   }
 ];
