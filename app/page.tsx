@@ -1,6 +1,7 @@
 "use client"
 import Hero from '@/components/Hero'
 import ProductCard from '@/components/ProductCard'
+import CategoryCarousel from '@/components/CategoryCarousel'
 import { products } from '@/data/products'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -35,24 +36,18 @@ export default function Home() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
             {[
-              { name: 'Couronnes Royales', img: '/images/cat-couronne.jpeg' },
-              { name: 'Colliers', img: '/images/cat-collier.jpeg' },
-              { name: 'Chaînes de Chevilles', img: '/images/cat-cheville.jpeg' },
-              { name: 'Chaînes de Hanches', img: '/images/cat-hanche.jpeg' }
+              { name: 'Chapeaux Royaux', images: ['/images/cat-couronne.jpeg', '/images/product-couronne-1.jpeg', '/images/product-couronne-2.jpeg'] },
+              { name: 'Colliers', images: ['/images/cat-collier.jpeg', '/images/product-collier-1.jpeg', '/images/product-collier-2.jpeg'] },
+              { name: 'Boucles d\'oreilles', images: ['/images/cat-boucle.jpeg', '/images/product-boucle-1.jpeg', '/images/product-boucle-2.jpeg'] },
+              { name: 'Chaînes de Hanches', images: ['/images/cat-hanche.jpeg', '/images/product-hanche-1.jpeg', '/images/product-hanche-2.jpeg'] }
             ].map((cat, index) => (
               <Link href="/boutique" key={index} className="group relative aspect-[3/4] overflow-hidden rounded-lg bg-gray-100 flex items-center justify-center">
                 <div className="absolute inset-0 flex items-center justify-center text-xs text-center text-gray-400 p-2">
-                  Image: {cat.img.split('/').pop()}
+                  Image: {cat.images[0].split('/').pop()}
                 </div>
-                <Image 
-                  src={cat.img} 
-                  alt={cat.name} 
-                  fill
-                  className="object-cover z-10 transition-transform duration-700 group-hover:scale-110"
-                  onError={(e) => { (e.target as HTMLImageElement).style.opacity = '0'; }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-20"></div>
-                <div className="absolute bottom-4 left-4 right-4 z-30">
+                <CategoryCarousel name={cat.name} images={cat.images} />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-20 pointer-events-none"></div>
+                <div className="absolute bottom-4 left-4 right-4 z-30 pointer-events-none">
                   <h3 className="font-serif text-white text-lg md:text-xl font-bold">{cat.name}</h3>
                 </div>
               </Link>
@@ -88,7 +83,7 @@ export default function Home() {
       <section className="relative py-24 bg-stone-900 overflow-hidden">
         <div className="absolute inset-0 opacity-40">
           <div className="absolute inset-0 flex items-center justify-center text-stone-600 text-sm">bg-occasions.jpg</div>
-          <Image src="/images/bg-occasions.jpg" alt="Occasions" fill className="object-cover" onError={(e) => { (e.target as HTMLImageElement).style.opacity = '0'; }} />
+          <Image src="/images/bg-occasions.jpg" alt="Occasions" fill sizes="100vw" className="object-cover" onError={(e) => { (e.target as HTMLImageElement).style.opacity = '0'; }} />
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <h2 className="font-serif text-3xl md:text-5xl text-white font-bold mb-8 leading-tight">
@@ -97,7 +92,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="bg-black/40 backdrop-blur-sm p-6 rounded-lg border border-white/10">
               <h3 className="text-[#D4AF37] font-serif text-2xl font-bold mb-3">Mariages</h3>
-              <p className="text-gray-300">Des parures complètes et couronnes royales pour faire de vous la reine de votre grand jour.</p>
+              <p className="text-gray-300">Des parures complètes et chapeaux royaux pour faire de vous la reine de votre grand jour.</p>
             </div>
             <div className="bg-black/40 backdrop-blur-sm p-6 rounded-lg border border-white/10">
               <h3 className="text-[#D4AF37] font-serif text-2xl font-bold mb-3">Cérémonies</h3>

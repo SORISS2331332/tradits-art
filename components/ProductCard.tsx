@@ -22,6 +22,7 @@ export default function ProductCard({ name, price, image, category }: ProductPro
           src={image} 
           alt={name}
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
           className="object-cover relative z-10 group-hover:scale-105 transition-transform duration-500"
           onError={(e) => {
             // Hide broken image so placeholder shows

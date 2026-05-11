@@ -22,6 +22,7 @@ export default function Navbar() {
                   src="/images/logo.jpeg" 
                   alt="Tradi's Art Logo" 
                   fill 
+                  sizes="56px"
                   style={{objectFit: "cover"}}
                 />
               </div>

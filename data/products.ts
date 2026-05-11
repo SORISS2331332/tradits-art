@@ -1,11 +1,11 @@
 export const products = [
   {
     id: 1,
-    name: "Couronne Royale d'Or",
-    category: "Couronnes Royales",
+    name: "Chapeau Royal d'Or",
+    category: "Chapeaux Royaux",
     price: 1500,
     image: "/images/product-couronne-1.jpeg",
-    description: "Une magnifique couronne royale confectionnée à la main avec des perles traditionnelles dorées et des cristaux, parfaite pour les mariages."
+    description: "Un magnifique chapeau royal confectionné à la main avec des perles traditionnelles dorées et des cristaux, parfait pour les mariages."
   },
   {
     id: 2,
@@ -17,11 +17,11 @@ export const products = [
   },
   {
     id: 3,
-    name: "Chaîne de Cheville Perle d'Eau",
-    category: "Chaînes de Chevilles",
+    name: "Boucle d'oreille Perle d'Eau",
+    category: "Boucles d'oreilles",
     price: 300,
-    image: "/images/product-cheville-1.jpeg",
-    description: "Délicate chaîne de cheville artisanale, un accessoire subtil et élégant."
+    image: "/images/product-boucle-1.jpeg",
+    description: "Délicate boucle d'oreille artisanale, un accessoire subtil et élégant."
   },
   {
     id: 4,
@@ -41,11 +41,11 @@ export const products = [
   },
   {
     id: 6,
-    name: "Couronne Nuptiale Nacrée",
-    category: "Couronnes Royales",
+    name: "Chapeau Nuptial Nacré",
+    category: "Chapeaux Royaux",
     price: 1300,
     image: "/images/product-couronne-2.jpeg",
-    description: "Sublime couronne en perles nacrées pour la mariée traditionnelle."
+    description: "Sublime chapeau en perles nacrées pour la mariée traditionnelle."
   },
   {
     id: 7,
@@ -67,9 +67,9 @@ export const products = [
 
 export const categories = [
   "Tous",
-  "Couronnes Royales",
+  "Chapeaux Royaux",
   "Colliers",
-  "Chaînes de Chevilles",
+  "Boucles d'oreilles",
   "Chaînes de Hanches",
   "Bagues"
 ];

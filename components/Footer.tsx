@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="flex flex-col items-center md:items-start">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#D4AF37] relative bg-white flex-shrink-0">
-                <Image src="/images/logo.jpeg" alt="Tradi’s Art Logo" fill className="object-cover" />
+                <Image src="/images/logo.jpeg" alt="Tradi’s Art Logo" fill sizes="48px" className="object-cover" />
               </div>
               <h3 className="font-serif text-2xl text-[#D4AF37] font-bold">Tradi’s Art</h3>
             </div>
